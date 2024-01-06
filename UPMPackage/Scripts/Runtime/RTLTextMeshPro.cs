@@ -106,7 +106,8 @@ namespace RTLTMPro
             if (ForceFix == false && TextUtils.IsRTLInput(originalText) == false)
             {
                 isRightToLeftText = false;
-                base.text = ThaiTextUtils.IsThaiText(originalText) ? ThaiFontAdjuster.Adjust(originalText) : originalText;
+                //base.text = ThaiTextUtils.IsThaiText(originalText) ? ThaiFontAdjuster.Adjust(originalText) : originalText;
+                base.text = originalText;
             } else
             {
                 isRightToLeftText = true;
